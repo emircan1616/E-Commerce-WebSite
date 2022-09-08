@@ -1,0 +1,57 @@
+﻿@model IEnumerable<EvKur.Models.Shop.BayiProduct>
+@{
+    ViewData["Title"] = "MarketeYukle";
+    
+}
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a asp-controller="Shop" asp-action="SepetiGoruntule" class="btn btn-secondary">Sepeti Görüntüle</a>
+      </li>          
+  </div>
+</nav>  
+<div class="container">
+    <div class="row">
+
+   
+<form method="get">
+
+@foreach(var item in Model)
+{
+    @if (item.BayiUrunAdet>0)
+    {
+        <div class="col-md-4" style="border: 2px solid black">
+            <div style="text-align: center; border-bottom: 2px solid maroon">
+                <h3>@item.BayiUrunIsim</h3>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img src="/Image/@item.Image" width="150px" height="150px" />
+        </div>
+        <div class="col-md-4" style="text-align:left">
+            <b>@item.BayiUrunFiyat</b>
+        </div>      
+
+        <div class="col-md-4" style="text-align: right; margin-bottom: 10px; border-top:2px solid maroon; padding:2px">
+         <a asp-controller="Shop" asp-action="SepeteEkle" asp-route-id="@item.productId"class="btn btn-secondary">Sepete Ekle</a>
+         </div>       
+
+    }
+}     
+</form>
+ </div>
+</div>
+
+
+

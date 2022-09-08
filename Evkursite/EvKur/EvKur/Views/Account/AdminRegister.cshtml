@@ -1,0 +1,34 @@
+﻿@model EvKur.Models.User.Admin
+@{
+    ViewData["Title"] = "AdminRegister";
+}
+
+<div class="row">
+    <h2>KAYIT OL</h2>
+    <form asp-controller="Account" asp-action="AdminRegister" method="post">
+  <div class="form-group">
+    <label >Ad : </label>
+    <input asp-for="AdminAdi" class="form-control" ><div class="red">@Html.ValidationMessageFor(m => m.AdminAdi)
+    </div>
+  </div>
+   <div class="form-group">
+    <label >Soyad</label>
+    <input asp-for="AdminSoyad" class="form-control" >@Html.ValidationMessageFor(m => m.AdminSoyad)
+  </div>
+   <div class="form-group">
+    <label >Kullanici Adi: </label>
+    <input  asp-for="KullaniciAdi" class="form-control" >@Html.ValidationMessageFor(m =>m.KullaniciAdi)
+  </div>
+  <div class="form-group">
+    <label >Sifre : </label>
+    <input  asp-for="Sifre" class="form-control" >@Html.ValidationMessageFor(m =>m.Sifre)
+  </div>
+  
+  
+  <br/>
+  <button asp-controller="Account"asp-action="AdminRegister" type="submit" class="btn btn-danger">Ekle</button>
+  
+  
+</form>
+</div>
+

@@ -1,0 +1,29 @@
+﻿@model IEnumerable<EvKur.Models.Factory.Tedarikci>
+@{
+    ViewData["Title"] = "TedarikcileriGoruntule";
+}
+
+<div class="container">
+
+     <h2 class="mb-4">Sisteme Kayıtlı Tedarikçiler</h2>
+     <hr /><br /><br />
+     <form method="get">
+<table class="table" id="myTable">
+  <thead>
+    <tr>
+      
+      <th scope="col">Bayi İsmi</th>      
+    </tr>
+  </thead>
+  <tbody>
+                @foreach(var item in Model){
+                    
+                        <tr>            
+      <td asp-for= "UrunAdet">@item.TedarikciIsmi</td>       
+      <td scope="row"><a asp-controller="Company"asp-action="TedarikciSil" asp-route-id="@item.Id" class="btn btn-danger">Anlaşmayı Bitir</a> </td> 
+      </tr>
+      }
+  </tbody>
+</table>
+</form>
+</div>

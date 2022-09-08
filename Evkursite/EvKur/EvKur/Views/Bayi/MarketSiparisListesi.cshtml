@@ -1,0 +1,45 @@
+﻿@using EvKur.Models.Factory
+@using EvKur.Models.Session
+@model IEnumerable<EvKur.Models.Shop.BayiProduct>
+@{
+    ViewData["Title"] = "MarketSiparisListesi";
+   var bayiSession = Context.Session.GetObjectFromJson<Bayii>("bayi");
+}
+
+
+
+
+<div class="container">
+     <h2 class="mb-4">Tedarikçilerin Elindeki Ürünler</h2>
+     <hr /><br /><br />
+     <form method="post">
+<table class="table" id="myTable">
+  <thead>
+    <tr>      
+      <th scope="col">Ad</th>
+      <th scope="col">fiyat</th>
+      <th scope="col">Adet</th>      
+    </tr>
+  </thead>
+  <tbody>
+                @foreach(var item in Model){
+                    @if (item.BayiId == bayiSession.Id)
+                    {
+                        <tr>      
+      <td hidden asp-for= "Id">@item.Id</td>
+      <td asp-for= "BayiUrunIsim">@item.BayiUrunIsim</td>
+      <td asp-for= "BayiUrunFiyat">@item.BayiUrunFiyat</td>
+      <td asp-for= "BayiUrunAdet">@item.BayiUrunAdet</td> 
+      
+      
+      </tr>
+                    }
+                    
+                    
+                                        
+      }
+  </tbody>
+</table>
+</form>
+</div>
+

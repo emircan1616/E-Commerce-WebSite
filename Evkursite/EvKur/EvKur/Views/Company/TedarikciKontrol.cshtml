@@ -1,0 +1,44 @@
+﻿@model IEnumerable<EvKur.Models.Shop.Product>
+@{
+    ViewData["Title"] = "TedarikciKontrol";
+}
+
+<div class="container">
+
+     <h2 class="mb-4">Sisteme Kayıtlı Tedarikçilerin Elindeki Ürünler</h2>
+     <hr /><br /><br />
+     <form method="get">
+<table class="table" id="myTable">
+  <thead>
+    <tr>
+        <th scope="col">Tedarikçi Id</th>
+      <th scope="col">Ad</th>
+      <th scope="col">fiyat</th>
+      <th scope="col">Adet</th>      
+    </tr>
+  </thead>
+  <tbody>
+                @foreach(var item in Model){
+                    @if (item.UrunAdet > 0)
+                    {
+                        <tr>      
+      <td hidden asp-for= "Id">@item.Id</td>
+      <td asp-for=TedarikciId>@item.TedarikciId</td>     
+      <td asp-for= "Ad">@item.UrunAdi</td>
+      <td asp-for= "UrunFiyat">@item.UrunFiyat</td>
+      <td asp-for= "UrunAdet">@item.UrunAdet</td> 
+      
+      </tr>
+                    }
+
+                        
+                                           
+      }
+  </tbody>
+</table>
+</form>
+</div>
+
+
+
+

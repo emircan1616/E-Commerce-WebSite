@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+    .split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;  
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: red;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.kullanici{
+    text-decoration:none;
+}
+a {
+     text-decoration: none;
+    }
+
+</style>
+<div class="split left">
+  <div class="centered">
+    <img src="https://cdn-icons-png.flaticon.com/512/219/219983.png" alt="Avatar woman">     
+    <h2 class="kullanici"><a asp-controller="Home"asp-action="UserKayitGit">Kullanici Kayıdı İçin Tıklayınız</a></h2>    
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <img src="https://cdn-icons-png.flaticon.com/512/213/213058.png" alt="Avatar man">
+    
+    <h2 class="kullanici"><a asp-controller="Home"asp-action="BayiKayitGit">Bayi Kayıdı İçin Tıklayınız</a></h2>    
+  </div>
+</div>
+
+

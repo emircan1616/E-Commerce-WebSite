@@ -1,0 +1,120 @@
+﻿@model IEnumerable<EvKur.Models.Shop.Category>
+@{
+    ViewData["Title"] = "ListeGoster";
+}
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+
+}
+
+</style>
+
+</head>
+<body class="arkaplan">
+    <div id="myNav" class="overlay">
+  <a id="butonrenk" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+     <a asp-controller="Category"asp-action="ListeGoster" id="home"><i class="fas fa-home"></i>Kategori Göster</a>
+        <a asp-controller="Category"asp-action="AddCategory" id="about"><i class="fas fa-user"></i>Kategori Ekle</a>
+        <a asp-controller="Product"asp-action="AddProduct" id="services"><i class="fas fa-th-large"></i>Ürün Ekle</a>
+        <a asp-controller="Product"asp-action="Index" id="blog"><i class="fas fa-pencil-alt"></i>Stokları Göster</a>        
+        <a asp-controller="Product"asp-action="SiparisleriListele" id="contact"><i class="fas fa-pencil-alt"></i>Gelen Siparişler</a>
+  </div>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+     
+</body>
+<div class="container">
+     <h2 class="mb-4">Product List</h2>
+     <hr /><br /><br />
+     <form method="post">
+<table class="table" id="myTable">
+  <thead>
+    <tr>
+      <th scope="col"><a asp-controller="Category"asp-action="AddCategory" class="btn btn-success">Kategori Ekle</a>
+          </th>
+      <th scope="col">Ad</th>
+      <th scope="col">fiyat</th>      
+    </tr>
+  </thead>
+  <tbody>
+      @foreach(var item in Model){
+    <tr>
+      <td scope="row"><a asp-controller="Category" asp-action="Edit" asp-route-id="@item.Id"class="btn btn-secondary">Düzenle</a></td>
+      <td hidden asp-for= "Id">@item.Id</td>
+      <td asp-for= "Ad">@item.KategoriIsmi</td>      
+      <td scope="row"><a asp-controller="Category"asp-action="DeleteCategory" asp-route-id="@item.Id" class="btn btn-danger">Kategoriyi Sil</a></td>
+
+    </tr>
+      }
+  </tbody>
+</table>
+</form>
+
+</div>
+
+

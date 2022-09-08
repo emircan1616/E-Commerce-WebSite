@@ -1,0 +1,168 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = EvKur
+build_property.RootNamespace = EvKur
+build_property.ProjectDir = C:\Users\Emircan\Desktop\Projeler\EvKurr\EvKur\EvKur\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Emircan\Desktop\Projeler\EvKurr\EvKur\EvKur
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Account/AdminLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBZG1pbkxvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Account/AdminRegister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBZG1pblJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Account/BayiiLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxCYXlpaUxvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Account/BayiRegister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxCYXlpUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Account/CompanyLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDb21wYW55TG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Account/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Account/TedarikciLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxUZWRhcmlrY2lMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Account/UserLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxVc2VyTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Account/UserRegister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxVc2VyUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Bayi/BayiUrunleriListele.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmF5aVxCYXlpVXJ1bmxlcmlMaXN0ZWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Bayi/MarketSiparisListesi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmF5aVxNYXJrZXRTaXBhcmlzTGlzdGVzaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Bayi/SiparisGecmisi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmF5aVxTaXBhcmlzR2VjbWlzaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Bayi/SiparisOlustur.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmF5aVxTaXBhcmlzT2x1c3R1ci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Bayi/TedarikcileriListele.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmF5aVxUZWRhcmlrY2lsZXJpTGlzdGVsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Bayi/YuklenecekUrunListesi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmF5aVxZdWtsZW5lY2VrVXJ1bkxpc3Rlc2kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Category/AddCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQWRkQ2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Category/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Category/ListeGoster.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcTGlzdGVHb3N0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Company/BayileriGoruntule.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVxCYXlpbGVyaUdvcnVudHVsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Company/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Company/Index2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVxJbmRleDIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Company/StokDurum.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVxTdG9rRHVydW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Company/TedarikciKontrol.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVxUZWRhcmlrY2lLb250cm9sLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Company/TedarikcileriGoruntule.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVxUZWRhcmlrY2lsZXJpR29ydW50dWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Product/AddProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxBZGRQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Product/EditProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxFZGl0UHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Product/SiparisleriListele.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxTaXBhcmlzbGVyaUxpc3RlbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Shop/MarketeYukle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxNYXJrZXRlWXVrbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Shop/SepetiGoruntule.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxTZXBldGlHb3J1bnR1bGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Emircan/Desktop/Projeler/EvKurr/EvKur/EvKur/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-jm4jvdm2sh

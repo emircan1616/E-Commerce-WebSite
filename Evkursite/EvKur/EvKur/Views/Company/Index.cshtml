@@ -1,0 +1,129 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body,h1 {
+    font-family: "Raleway", sans-serif;
+    top:30px;
+    text-align:center;
+    color:green;
+         }
+         body,h4{
+             text-align:center;
+             color:green;
+         }
+         
+body, html {height: 100%}
+
+    html {  
+        background: url(https://emerging-europe.com/wp-content/uploads/2019/09/bigstock-solar-panel-on-sky-background-315790303-990x556.jpg) no-repeat center center fixed; 
+  min-height: 100%;
+  background-position: center;
+  
+              -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover;
+}
+.arkaplan{
+     background: url(https://i.pinimg.com/originals/71/e1/e8/71e1e8be873922faec4958567daf9e55.jpg) no-repeat center center fixed; 
+     background-position: center;
+     background-size: cover;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+
+}
+</style>
+</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> @*swal çalışması için bunu diğer sayfalara da ekle*@
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<body class="arkaplan">
+    <div id="myNav" class="overlay">
+  <a id="butonrenk" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+   <a asp-controller="Company"asp-action="TedarikcileriGoruntule" id="contact"><i class="fas fa-pencil-alt"></i>Firmaya Bağlı Tedarikçiler</a>
+    <a asp-controller="Company"asp-action="BayileriGoruntule" id="contact"><i class="fas fa-pencil-alt"></i>Firmaya Bağlı Bayiler</a>>
+    <a asp-controller="Company"asp-action="StokDurum" id="contact"><i class="fas fa-pencil-alt"></i>Bayilerin Genel Stok Durumları Ve Dağılımı</a>    
+    <a asp-controller="Company"asp-action="Index2" id="contact"><i class="fas fa-pencil-alt"></i>Tedarikçilerin Genel Stok Durumu Ve Dağılımı</a>    
+  </div>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+        
+        <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">EVKUR</h1>
+    <br />
+    <h4>Yönetici Paneline Hoşgeldiniz</h4>
+    
+  </div>
+    </div>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+     
+</body>
+
+
+

@@ -1,0 +1,235 @@
+﻿@model EvKur.Models.User.Customer
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, AuthoringTagHelpers
+@{
+    ViewData["Title"] = "UserRegister";
+}
+<style>
+	img{
+	width: 100%;
+}
+.login {
+    height: 1000px;
+    width: 100%;
+    background: radial-gradient(#653d84, #332042);
+    position: relative;
+}
+.login_box {
+    width: 1050px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 4px 22px -8px #0004;
+    display: flex;
+    overflow: hidden;
+}
+.login_box .left{
+  width: 41%;
+  height: 100%;
+  padding: 25px 25px;
+  
+}
+.login_box .right{
+  width: 59%;
+  height: 100%  
+}
+.left .top_link a {
+    color: #452A5A;
+    font-weight: 400;
+}
+.left .top_link{
+  height: 20px
+}
+.left .contact{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: 100%;
+    width: 73%;
+    margin: auto;
+}
+.left h3{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.left input {
+    border: none;
+    width: 80%;
+    margin: 15px 0px;
+    border-bottom: 1px solid #4f30677d;
+    padding: 7px 9px;
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    font-weight: 600;
+    font-size: 14px;
+}
+.left{
+	background: linear-gradient(-45deg, #dcd7e0, #fff);
+}
+.submit {
+    border: none;
+    padding: 15px 70px;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    margin-top: 120px;
+    background: #583672;
+    color: #fff;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    -moz-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+}
+
+
+
+.right {
+	background: linear-gradient(212.38deg, rgba(242, 57, 127, 0.7) 0%, rgba(175, 70, 189, 0.71) 100%),url(https://emarsys.com/app/uploads/fly-images/42393/GettyImages-507476574-1-2560x1280-c-default-1110x9999.jpg);
+	color: #fff;
+	position: relative;
+}
+
+.right .right-text{
+  height: 100%;
+  position: relative;
+  transform: translate(0%, 45%);
+}
+.right-text h2{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+}
+.right-text h5{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.right .right-inductor{
+  position: absolute;
+  width: 70px;
+  height: 7px;
+  background: #fff0;
+  left: 50%;
+  bottom: 70px;
+  transform: translate(-50%, 0%);
+}
+.top_link img {
+    width: 28px;
+    padding-right: 7px;
+    margin-top: -3px;
+}
+</style>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> @*swal çalışması için bunu diğer sayfalara da ekle*@
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+
+<body>      
+    
+	<section class="login">
+		<div class="login_box">
+			<div class="left">
+				<div class="top_link"><a href="#"><img src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download" alt="">Ana Sayfaya Git</a></div>
+				<div class="contact">                    
+					<form method="post">
+						<h3>KAYIT OL</h3>
+						<input asp-for="MusteriAdi" class="form-control" placeholder="MusteriAdi">@Html.ValidationMessageFor(m => m.MusteriAdi)
+						 <input asp-for="MusteriSoyad" class="form-control" placeholder="MusteriSoyad">@Html.ValidationMessageFor(m => m.MusteriSoyad)
+						 <input  asp-for="KullaniciAdi" class="form-control" placeholder="KullaniciAdi">@Html.ValidationMessageFor(m =>m.KullaniciAdi)
+						  <input  asp-for="Sifre" class="form-control" placeholder="Sifre">@Html.ValidationMessageFor(m =>m.Sifre)
+						  <input asp-for="Email" class="form-control" placeholder="Email">@Html.ValidationMessageFor(m => m.Email)
+						  <button type="submit" class="btn btn-danger" id="btn1" >Kayıt Ol</button>
+					</form>
+				</div>
+			</div>
+			<div class="right">
+				<div class="right-text">
+					<h2>EVKUR</h2>	
+                    <h5>Kullanıcı Kayıt</h5>
+				</div>
+				<div class="right-inductor"><img src="" alt=""></div>
+			</div>
+		</div>
+        
+	</section>
+   <script type="text/javascript">
+$('#btn1').click(function() {
+    alert("Sisteme Kayıt Tamamlanmıştır.")
+});
+
+</script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*<div class="row">
+    <h2>KAYIT OL</h2>
+    <form asp-controller="Account" asp-action="UserRegister" method="post">
+  <div class="form-group">
+    <label >Ad : </label>
+    <input asp-for="MusteriAdi" class="form-control" ><div class="red">@Html.ValidationMessageFor(m => m.MusteriAdi)
+    </div>
+  </div>
+   <div class="form-group">
+    <label >Soyad</label>
+    <input asp-for="MusteriSoyad" class="form-control" >@Html.ValidationMessageFor(m => m.MusteriSoyad)
+  </div>
+   <div class="form-group">
+    <label >Kullanici Adi: </label>
+    <input  asp-for="KullaniciAdi" class="form-control" >@Html.ValidationMessageFor(m =>m.KullaniciAdi)
+  </div>
+  <div class="form-group">
+    <label >Sifre : </label>
+    <input  asp-for="Sifre" class="form-control" >@Html.ValidationMessageFor(m =>m.Sifre)
+  </div>
+  <div class="form-group">
+    <label >Mail Adresi</label>
+    <input asp-for="Email" class="form-control" >@Html.ValidationMessageFor(m => m.Email)
+  </div>
+  
+  <br/>
+  <button asp-controller="Account"asp-action="UserRegister" type="submit" class="btn btn-danger">Kayıt Ol</button>
+  
+  
+</form>
+</div>*@

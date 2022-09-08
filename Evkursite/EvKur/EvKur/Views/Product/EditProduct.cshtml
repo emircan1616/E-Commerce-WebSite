@@ -1,0 +1,83 @@
+﻿@model EvKur.Models.Shop.Product
+@{
+    ViewData["Title"] = "EditProduct";
+}
+<head>
+    <style>
+    #my-side-nav a {
+        position: absolute;
+        left: -130px;
+        transition: 0.3s;
+        padding: 15px;
+        width: 135px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        border-radius: 0 5px 5px 0;
+    }
+    #my-side-nav a:hover {
+        left: 0;
+    }
+    #home {
+        top: 20px;
+        background-color: #79A7A8;
+    }
+    #about {
+        top: 80px;
+        background-color: #F59914;
+    }
+    #services {
+        top: 200px;
+        background-color: #4CAF50;
+    }
+    #blog {
+        top: 140px;
+        background-color: #2196F3;
+    }
+    #contact {
+        top: 260px;
+        background-color: #555;
+    }
+    .fas, .far {
+        margin-right: 5px;
+    }    
+</style>
+</head>
+<h2>Product Edit</h2>
+<div class="row">
+
+      
+    <hr />
+    <form asp-controller="Product" asp-action="Edit" method="post">
+       @Model.Id = {<input type = "hidden" asp-for="Id">}
+  <div class="form-group">
+    <label >Ürün Adı : </label>
+    <input asp-for="UrunAdi" class="form-control" >@Html.ValidationMessageFor(m => m.UrunAdi)
+  </div>
+   <div class="form-group">
+    <label>Ürün Fiyatı:</label>
+    <input asp-for="UrunFiyat" class="form-control" >@Html.ValidationMessageFor(m => m.UrunFiyat)
+  </div>
+   <div class="form-group">
+    <label >Urun Adet : </label>
+    <input  asp-for="UrunAdet" class="form-control" >@Html.ValidationMessageFor(m => m.UrunAdet)
+  </div>  
+  <br />    
+  
+  <button asp-controller="Product" asp-action="Edit" type="submit" class="btn btn-info">Kaydet</button>
+  
+</form>
+</div>
+<body>
+ 
+   
+    <div id="my-side-nav">
+        <a asp-controller="Category"asp-action="ListeGoster" id="home"><i class="fas fa-home"></i>Kategori Göster</a>
+        <a asp-controller="Category"asp-action="AddCategory" id="about"><i class="fas fa-user"></i>Kategori Ekle</a>
+        <a asp-controller="Product"asp-action="AddProduct" id="services"><i class="fas fa-th-large"></i>Ürün Ekle</a>
+        <a asp-controller="Product"asp-action="Index" id="blog"><i class="fas fa-pencil-alt"></i>Stokları Göster</a>
+        
+    </div>
+    
+    <script src="https://kit.fontawesome.com/sizin-id-niz-gelecek.js" crossorigin="anonymous"></script>
+</body>

@@ -1,0 +1,35 @@
+﻿@model EvKur.Models.Shop.BayiSiparis
+@{
+    ViewData["Title"] = "SiparisOlustur";
+}
+
+<div class="row">
+    <h2>SiparişVer</h2>
+    <form asp-controller="Bayi" asp-action="SiparisOlustur" method="post">
+
+        <div class="form-group">
+            <label>Ad : </label>
+            <input asp-for="SiparisAdi" class="form-control">
+            <div class="red">
+                @Html.ValidationMessageFor(m => m.SiparisAdi)
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Sipariş adeti    </label>
+            <input asp-for="SiparisMiktari" class="form-control">@Html.ValidationMessageFor(m => m.SiparisMiktari)
+        </div>
+        <div>
+            <label>Tedarikçi Seçininiz</label>
+
+            <select asp-for="tedarikciId" class="form-control" asp-items="ViewBag.dgr"></select>
+           
+        </div>
+
+        <br />
+
+        <button asp-controller="Bayi" asp-action="SiparisOlustur" type="submit" class="btn btn-danger">Sipariş Oluştur</button>
+
+
+    </form>
+</div>
+

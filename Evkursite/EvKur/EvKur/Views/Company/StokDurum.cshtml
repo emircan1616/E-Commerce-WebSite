@@ -1,0 +1,94 @@
+﻿@model IEnumerable<EvKur.Models.Shop.BayiProduct>
+@{
+    ViewData["Title"] = "Index2";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+    <div class="container">
+
+     <h2 class="mb-4">Sisteme Kayıtlı Tedarikçilerin Elindeki Ürünler Ve Dağılımları</h2>
+     <hr /><br /><br />
+     <form method="get">
+<table class="table" id="myTable">
+  <thead>
+    <tr>
+      <th scope="col">Bayi Id</th>
+      <th scope="col">Ad</th>
+      <th scope="col">fiyat</th>
+      <th scope="col">Adet</th>      
+    </tr>
+  </thead>
+  <tbody>
+                @foreach(var item in Model){
+                    @if (item.BayiUrunAdet > 0)
+                    {
+                        <tr>      
+      <td hidden asp-for= "Id">@item.Id</td>
+      <td asp-for=BayiId>@item.BayiId</td>   
+      <td asp-for= "Ad">@item.BayiUrunIsim</td>
+      <td asp-for= "UrunFiyat">@item.BayiUrunFiyat ₺</td>
+      <td asp-for= "UrunAdet">@item.BayiUrunAdet</td> 
+      
+      </tr>
+                    }
+
+                        
+                                           
+      }
+  </tbody>
+</table>
+</form>
+</div>
+<head>
+    <title>Result Visualization</title>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json",
+                url: '@Url.Action("VisualizeProductResultBayi", "Company")',
+                success: function (result) {
+                    google.charts.load('current', {
+                        'packages': ['corechart']
+                    });
+                    google.charts.setOnLoadCallback(function () {
+                        drawChart(result);
+                    });
+                }
+            });
+        });
+
+        function drawChart(result) {
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Name');
+            data.addColumn('number', 'Stoklar');
+            var dataArray = [];
+
+            $.each(result, function (i, obj) {
+                dataArray.push([obj.proname, obj.stock]);
+            });
+            data.addRows(dataArray);
+
+            var columnChartOptions = {
+                title: "Tedarikçileri Elindeki Ürünler - Stok Grafiği",
+                width: 1000,
+                height: 800,
+                bar: { groupWidth: "20%" },
+            };
+
+            var columnChart = new google.visualization.PieChart(document
+                .getElementById('Piechart_div'));
+
+            columnChart.draw(data, columnChartOptions);
+        }
+    </script>
+</head>
+<body>
+    <div id="Piechart_div"></div>
+</body>
+</html>

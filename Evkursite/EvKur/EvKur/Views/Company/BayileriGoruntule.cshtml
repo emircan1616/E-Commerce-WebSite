@@ -1,0 +1,39 @@
+﻿@model IEnumerable<EvKur.Models.Factory.Bayii>
+@{
+    ViewData["Title"] = "BayileriGoruntule";
+}
+
+<div class="container">
+
+     <h2 class="mb-4">Sisteme Kayıtlı Bayiler</h2>
+     <hr /><br /><br />
+     <form method="get">
+<table class="table" id="myTable">
+  <thead>
+    <tr>
+      
+      <th scope="col">Bayi İsmi</th>     
+      <th scope="col">Bayi Mail</th> 
+      <th scope="col">Bayi Telefon</th> 
+      <th scope="col">Bayi Açıklama</th> 
+
+    </tr>
+  </thead>
+  <tbody>
+                @foreach(var item in Model){
+                    
+                        <tr>            
+      <td asp-for= "UrunAdet">@item.BayiAdı</td> 
+      <td asp-for= "UrunAdet">@item.BayiMail</td> 
+      <td asp-for= "UrunAdet">@item.BayiTelefon</td> 
+      <td asp-for= "UrunAdet">@item.BayiAciklama</td> 
+      <td scope="row"><a asp-controller="Company"asp-action="BayiSil" asp-route-id="@item.Id" class="btn btn-danger">Anlaşmayı Bitir</a> </td>
+      
+      </tr>
+      }
+  </tbody>
+</table>
+</form>
+</div>
+
+

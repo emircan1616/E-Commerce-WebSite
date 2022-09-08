@@ -1,0 +1,41 @@
+﻿@model IEnumerable<EvKur.Models.Shop.BayiSiparis>
+@using EvKur.Models.Factory
+@using EvKur.Models.Session
+
+@{
+    ViewData["Title"] = "SiparisleriListele";
+    var tedarikciSession = Context.Session.GetObjectFromJson<Tedarikci>("tedarikci");
+}
+
+<div class="container">
+     <h2 class="mb-4">Product List</h2>
+     <hr /><br /><br />
+     <form method="post">
+<table class="table" id="myTable">
+  <thead>
+    <tr>      
+          </th>
+      <th scope="col">Ad</th>
+      <th scope="col">fiyat</th>
+      <th scope="col">Adet</th>
+    </tr>
+  </thead>
+  <tbody>
+                @foreach(var item in Model){
+                   
+                    @if(item.tedarikciId == tedarikciSession.Id)
+                    {
+       <tr>      
+      <td hidden asp-for= "Id">@item.Id</td>
+      <td asp-for= "SiparisAdi">@item.SiparisAdi</td>      
+      <td asp-for= "SiparisMiktari">@item.SiparisMiktari</td>
+      <td scope="row"><a asp-controller="Product"asp-action="DeleteProduct" asp-route-id="@item.Id" class="btn btn-danger">Urun Sil</a> </td>      
+      </tr>
+                    }                   
+                    
+      }
+  </tbody>
+
+</table>
+</form>
+</div>
